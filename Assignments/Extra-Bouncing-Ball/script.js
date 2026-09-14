@@ -31,4 +31,3 @@ speedControl.addEventListener("input", (event) => {
   ball.style.setProperty("--duration", `${duration}s`);
   shadow.style.setProperty("--duration", `${duration}s`);
 });
-

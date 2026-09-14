@@ -15,11 +15,11 @@ FSD21_623/
 │   ├── 06-Event-Module/
 │   └── 07-HTTP-Module/
 └── Assignments/
-    ├── 01-Bouncing-Ball/
+    ├── 01-Promises-Async-Await/
     ├── 02-Product-API/
     ├── 03-Portfolio-Express/
-    └── 04-React-Express/
+    ├── 04-React-Express/
+    └── Extra-Bouncing-Ball/
 ```
 
 Each folder contains its own instructions and can be run independently.
-
