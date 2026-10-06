@@ -19,7 +19,18 @@ FSD21_623/
     ├── 02-Product-API/
     ├── 03-Portfolio-Express/
     ├── 04-React-Express/
+    ├── 05-Campus-Help-Desk/
+    ├── 06-Notes-App/
     └── Extra-Bouncing-Ball/
 ```
 
 Each folder contains its own instructions and can be run independently.
+
+## Full stack assignments
+
+| Assignment | App | Development URL |
+| --- | --- | --- |
+| [5](Assignments/05-Campus-Help-Desk) | Campus problem submission and ticket tracking | `http://localhost:5175` |
+| [6](Assignments/06-Notes-App) | Student text notes with search, editing and pinning | `http://localhost:5176` |
+
+For either app, use Node.js 22.12 or newer, open its folder, run `npm install`, then `npm run dev`. Both include a React frontend, Express REST API, persistent server-side JSON storage, tests and their own run instructions.

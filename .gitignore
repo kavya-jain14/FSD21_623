@@ -5,3 +5,5 @@ coverage/
 .DS_Store
 *.log
 
+Assignments/05-Campus-Help-Desk/server/data/
+Assignments/06-Notes-App/server/data/
