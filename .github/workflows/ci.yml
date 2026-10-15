@@ -1,0 +1,26 @@
+name: Verify assignments
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  assignments:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        assignment: [02-Product-API, 03-Portfolio-Express, 04-React-Express, 05-Campus-Help-Desk, 06-Notes-App]
+    defaults:
+      run:
+        working-directory: Assignments/${{ matrix.assignment }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: Assignments/${{ matrix.assignment }}/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run build --if-present
